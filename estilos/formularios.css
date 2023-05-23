@@ -17,6 +17,7 @@ form input, form textarea {
 
 input[type='text'], input[type='number'], textarea {
   width: 95%;
+  /*background-color: #cadaff;*/
 }
 
 input[type='submit'] {

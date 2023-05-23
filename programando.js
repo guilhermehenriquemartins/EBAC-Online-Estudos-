@@ -7,3 +7,13 @@ var botao2 = document.getElementsByTagName('form')[1].querySelector('input[type=
 
 botao2.style.background = 'red'
 botao2.style.color = 'white'
+
+var nome1 = document.getElementsByTagName('form')[0].querySelector('input[type=text]')
+
+nome1.style.background = '#cadaff'
+nome1.style.border = 'none'
+nome1.style.outline = '1px dashed blue'
+
+var numeros1 = document.getElementsByTagName('form')[0].querySelector('input[type=number]')
+
+numeros1.style.background = '#cadaff'
