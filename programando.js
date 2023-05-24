@@ -17,3 +17,7 @@ nome1.style.outline = '1px dashed blue'
 var numeros1 = document.getElementsByTagName('form')[0].querySelector('input[type=number]')
 
 numeros1.style.background = '#cadaff'
+
+nome_beneficiario = document.getElementById('inome')
+
+document.getElementById('botao1').disabled = nome_beneficiario.value.split(' ').length < 2

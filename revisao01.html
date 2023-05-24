@@ -11,11 +11,11 @@
 <body>
   <form action="login.php">
     <h1>Formulário 1</h1>
-    <input type="text" name="nome" id="inome" placeholder="Nome completo do beneficiário"><br>
-    <input type="number" name="conta" id="iconta" placeholder="Número da conta"><br>
-    <input type="number" name="valor" id="ivalor" placeholder="Valor"><br>
-    <textarea name="descricao" id="idescricao" cols="30" rows="10" placeholder="Descrição (opcional)"></textarea><br>
-    <input type="submit" value="DEPOSITAR">
+    <input type="text" name="nome" id="inome" placeholder="Nome completo do beneficiário" required><br>
+    <input type="number" name="conta" id="iconta" placeholder="Número da conta" required><br>
+    <input type="number" name="valor" id="ivalor" placeholder="Valor" required><br>
+    <textarea name="descricao" id="idescricao" cols="30" rows="10" placeholder="Descrição (opcional)" required></textarea><br>
+    <input id="botao1" type="submit" value="DEPOSITAR">
   </form>
   <form action="cadastro.php">
     <h1>Formulário 2</h1>
@@ -23,7 +23,7 @@
     <input type="number" name="conta" id="iconta" placeholder="Número da conta"><br>
     <input type="number" name="valor" id="ivalor" placeholder="Valor"><br>
     <textarea name="descricao" id="idescricao" cols="30" rows="10" placeholder="Descrição (opcional)"></textarea><br>
-    <input type="submit" value="DEPOSITAR">
+    <input id="botao2" type="submit" value="DEPOSITAR">
   </form>
   <script src="programando.js"></script>
 </body>
