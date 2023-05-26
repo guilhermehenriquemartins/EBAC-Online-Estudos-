@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="revisao02.css">
+</head>
+<body>
+  <header>
+    <h1>PLAYTEC Banking</h1>
+    <h2>Depósitos</h2>
+  </header>
+  <form id="formulario" action="cadastro.php" method="post" autocomplete="off">
+    <input type="text" name="beneficiario" id="ibeneficiario" autocomplete="username" required placeholder="Nome completo do beneficiário">
+    <br>
+    <input type="number" name="conta" id="iconta" required placeholder="Número da conta">
+    <br>
+    <input type="number" name="valor" id="ivalor" required placeholder="Valor">
+    <br>
+    <textarea name="descricao" id="idescricao" placeholder="Descrição" cols="30" rows="10"></textarea>
+    <br>
+    <input id="depositar" type="submit" value="DEPOSITAR" onmousemove="dentro()" onmouseout="fora()" onclick="clicou()">
+  </form>
+  <script src="revisao02.js"></script>
+</body>
+</html>
