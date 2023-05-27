@@ -1,22 +1,18 @@
-function dentro() {
-  var botao = document.getElementById('depositar')
-  botao.style.background = 'black'
-  botao.style.color = 'white'
-}
+var form = window.document.getElementById('formulario')
 
-function fora() {
-  var botao1 = document.getElementById('depositar')
-  botao1.style.background = 'gray'
+function validaNome (NomeCompleto) {
+  const NomeComoArray = NomeCompleto.split(' ')
+  return NomeComoArray.length >= 2
 }
-
-function clicou() {
-  var botao2 = document.getElementById('depositar')
-  botao2.style.background = 'white'
-  botao2.style.color = 'black'
-}
-
-var form = document.getElementById('formulario')
 
 form.addEventListener('submit', function(e) {
   e.preventDefault()
+
+  var NomeBeneficiario = window.document.getElementById('ibeneficiario')
+
+  if (!validaNome(NomeBeneficiario.value)) {
+    alert('Nome Incompleto')
+  } else {
+    alert('Nome está tudo certo!')
+  }
 })
