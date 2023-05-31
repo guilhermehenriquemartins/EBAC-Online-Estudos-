@@ -29,17 +29,24 @@
         <div id="descricao">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ad, fugiat reiciendis animi tenetur sapiente dolor minus? Nobis voluptatum soluta exercitationem quae optio totam neque porro obcaecati ut consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quo expedita corrupti aliquam perspiciatis, eaque optio harum aut consequatur ratione ex sequi sit maxime aspernatur repellat natus. Laborum, perspiciatis asperiores?</p>
         </div>
+        <div id="icones">
+          <ul>
+            <li><img id="nintendo-imagem" src="imagens/nintendo.png" alt="Nintendo Logo">
+            <li><img id="xbox-imagem" src="imagens/xbox.png" alt="Xbox Logo">
+            <li><img id="play-imagem" src="imagens/playstation.png" alt="Playstation Logo">
+          </ul>
+        </div>
       </section>
       <section id="contato">
         <h1>contato</h1>
         <div id="formulario">
           <h2>fale conosco</h2>
-          <form action="cadastro.php" autocomplete="off" method="post">
-            <input type="text" name="nomeCompleto" id="inomeCompleto">
-            <input type="email" name="email" id="iemail">
-            <input type="number" name="valorDeposito" id="ivalorDeposito">
-            <input type="number" name="numeroConta" id="inumeroConta">
-            <textarea name="descricao" id="idescricao" cols="30" rows="10"></textarea>
+          <form id="fale-conosco" action="cadastro.php" autocomplete="off" method="post">
+            <input type="text" name="nomeCompleto" id="inomeCompleto" placeholder="Seu Nome Completo" autocomplete="username" required>
+            <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
+            <input type="number" name="valorDeposito" id="ivalorDeposito" placeholder="Valor Depósito" required>
+            <input type="number" name="numeroConta" id="inumeroConta" placeholder="Conta" required min="0" max="10" step="0.5">
+            <textarea name="descricao" id="idescricao" cols="30" rows="10" placeholder="Descrição (opcional)"></textarea>
             <input type="submit" value="DEPOSITAR">
             <input type="reset" value="CORRIGIR">
           </form>
