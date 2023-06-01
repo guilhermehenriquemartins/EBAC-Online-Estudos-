@@ -208,3 +208,50 @@ input[type='reset'] {
   height: 40px;
   cursor: pointer;
 }
+
+#redes-sociais {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#redes-sociais h2 {
+  text-transform: uppercase;
+  color: #00388b;
+  margin-bottom: 10px;
+}
+
+#redes-sociais li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+
+#instagram {
+  width: 35px;
+}
+
+#facebook {
+  width: 35px;
+}
+
+#youtube {
+  width: 80px;
+}
+
+#endereco {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#endereco h2 {
+  color: #00388b;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #00388b;
+  text-align: center;
+  color: white;
+  padding: 10px 0px;
+}

@@ -7,8 +7,9 @@
   <title>Games Shop</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="gameshop.css">
+  <link rel="stylesheet" href="gameshopgeral.css">
 </head>
-<body>
+<body onresize="mudouTela()">
   <header>
     <div class="limitador">
       <h1>games shop</h1>
@@ -51,11 +52,23 @@
             <input type="reset" value="CORRIGIR">
           </form>
         </div>
+        <div id="redes-sociais">
+          <h2>nos acompanhe</h2>
+          <ul>
+            <li><img id="instagram" src="imagens/instagram.png" alt="Logo-Instagram">
+            <li><img id="facebook" src="imagens/facebook.png" alt="Logo-Facebook">
+            <li><img id="youtube" src="imagens/youtube.png" alt="Logo-YouTube">
+          </ul>
+        </div>
+        <div id="endereco">
+          <h2>venha até nós</h2>
+          <p>Rua JavaScript nº 124, Vila HTML - São Paulo - SP</p>
+        </div>
       </section>
     </div>
   </main>
   <footer>
-
+    <p>&copy;Games Shop - Todos os direitos reservados - 2023</p>
   </footer>
   <script src="gameshop.js"></script>
 </body>

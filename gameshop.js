@@ -1,3 +1,11 @@
+function mudouTela() {
+  if (window.innerWidth >= 768) {
+    items.style.display = 'block'
+  } else {
+    items.style.display = 'none'
+  }
+}
+
 function Menu() {
   var itens = window.document.getElementById('items')
   if (itens.style.display == 'block') {
@@ -19,8 +27,8 @@ form.addEventListener('submit', function(e){
 
   const NomeBeneficiario = document.getElementById('inomeCompleto')
   if (!validaNome(NomeBeneficiario.value)) {
-    alert('O nome está incompleto!')
+    alert('O Nome está incompleto!')
   } else {
-    alert('Está tudo OK!')
+    alert('Tudo OK!')
   }
 })
