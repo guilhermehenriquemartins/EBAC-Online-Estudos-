@@ -90,6 +90,7 @@ main {
 }
 
 #descricao {
+  display: block;
   margin: 10px auto;
   text-indent: 20px;
   line-height: 25px;
@@ -97,7 +98,6 @@ main {
 
 #icones {
   text-align: center;
-  margin-top: -10px;
 }
 
 #icones li {

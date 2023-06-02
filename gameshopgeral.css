@@ -48,4 +48,50 @@ Grandes telas: acima de 1200px
     float: right;
     margin-left: 5px;
   }
+
+  header > .limitador > nav > a:hover {
+    background-color: transparent;
+  }
+
+  #sobre-a-loja > h1 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  main img {
+    width: 50%;
+    float: left;
+  }
+
+  #descricao {
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+    font-size: 1em;
+  }
+
+  #icones {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    float: right;
+  }
+
+  #icones img {
+    margin-right: 10px;
+  }
+
+  #nintendo-imagem {
+    width: 80px;
+  }
+
+  #play-imagem {
+    width: 35px;
+  }
+
+  #contato {
+    margin-top: 400px;
+  }
 }
