@@ -15,8 +15,8 @@
       <h1>games shop</h1>
       <span id="burguer" class="material-symbols-outlined" onclick="Menu()">menu</span>
       <nav id="items">
-        <a href="#sobre-a-loja">sobre a loja</a>
-        <a href="#contato">contato</a>
+        <a id="loja" href="#sobre-a-loja">sobre a loja</a>
+        <a id="contatoloja" href="#contato">contato</a>
       </nav>
     </div>
   </header>
@@ -24,47 +24,51 @@
     <div class="limitador">
       <section id="sobre-a-loja">
         <h1>Sobre a Loja</h1>
+        <div id="conteudo-sobreloja"></div>
         <div id="imagem">
           <img src="imagens/loja.jpg" alt="">
         </div>
-        <div id="descricao">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ad, fugiat reiciendis animi tenetur sapiente dolor minus? Nobis voluptatum soluta exercitationem quae optio totam neque porro obcaecati ut consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quo expedita corrupti aliquam perspiciatis, eaque optio harum aut consequatur ratione ex sequi sit maxime aspernatur repellat natus. Laborum, perspiciatis asperiores?</p>
-          <div id="icones">
-            <ul>
-              <li><img id="nintendo-imagem" src="imagens/nintendo.png" alt="Nintendo Logo">
-              <li><img id="xbox-imagem" src="imagens/xbox.png" alt="Xbox Logo">
-              <li><img id="play-imagem" src="imagens/playstation.png" alt="Playstation Logo">
-            </ul>
-          </div>  
+          <div id="descricao">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero ad, fugiat reiciendis animi tenetur sapiente dolor minus? Nobis voluptatum soluta exercitationem quae optio totam neque porro obcaecati ut consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quo expedita corrupti aliquam perspiciatis, eaque optio harum aut consequatur ratione ex sequi sit maxime aspernatur repellat natus. Laborum, perspiciatis asperiores?</p>
+            <div id="icones">
+              <ul>
+                <li><img id="nintendo-imagem" src="imagens/nintendo.png" alt="Nintendo Logo">
+                <li><img id="xbox-imagem" src="imagens/xbox.png" alt="Xbox Logo">
+                <li><img id="play-imagem" src="imagens/playstation.png" alt="Playstation Logo">
+              </ul>
+            </div>
+          </div>
         </div>  
       </section>
-      <section id="contato">
-        <h1>contato</h1>
-        <div id="formulario">
-          <h2>fale conosco</h2>
-          <form id="fale-conosco" action="cadastro.php" autocomplete="off" method="post">
-            <input type="text" name="nomeCompleto" id="inomeCompleto" placeholder="Seu Nome Completo" autocomplete="username" required>
-            <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
-            <input type="number" name="valorDeposito" id="ivalorDeposito" placeholder="Valor Depósito" required>
-            <input type="number" name="numeroConta" id="inumeroConta" placeholder="Conta" required min="0" max="10" step="0.5">
-            <textarea name="descricao" id="idescricao" cols="30" rows="10" placeholder="Descrição (opcional)"></textarea>
-            <input type="submit" value="DEPOSITAR">
-            <input type="reset" value="CORRIGIR">
-          </form>
-        </div>
-        <div id="redes-sociais">
-          <h2>nos acompanhe</h2>
-          <ul>
-            <li><img id="instagram" src="imagens/instagram.png" alt="Logo-Instagram">
-            <li><img id="facebook" src="imagens/facebook.png" alt="Logo-Facebook">
-            <li><img id="youtube" src="imagens/youtube.png" alt="Logo-YouTube">
-          </ul>
-        </div>
-        <div id="endereco">
-          <h2>venha até nós</h2>
-          <p>Rua JavaScript nº 124, Vila HTML - São Paulo - SP</p>
-        </div>
-      </section>
+      <div class="limitador">
+        <section id="contato">
+          <h1>contato</h1>
+          <div id="formulario">
+            <h2>fale conosco</h2>
+            <form id="fale-conosco" action="cadastro.php" autocomplete="off" method="post">
+              <input type="text" name="nomeCompleto" id="inomeCompleto" placeholder="Seu Nome Completo" autocomplete="username" required>
+              <input type="email" name="email" id="iemail" placeholder="Seu e-mail">
+              <input type="number" name="valorDeposito" id="ivalorDeposito" placeholder="Valor Depósito" required>
+              <input type="number" name="numeroConta" id="inumeroConta" placeholder="Conta" required min="0" max="10" step="0.5">
+              <textarea name="descricao" id="idescricao" cols="30" rows="10" placeholder="Descrição (opcional)"></textarea>
+              <input type="submit" value="DEPOSITAR">
+              <input type="reset" value="CORRIGIR">
+            </form>
+          </div>
+          <div id="redes-sociais">
+            <h2>nos acompanhe</h2>
+            <ul>
+              <li><img id="instagram" src="imagens/instagram.png" alt="Logo-Instagram">
+              <li><img id="facebook" src="imagens/facebook.png" alt="Logo-Facebook">
+              <li><img id="youtube" src="imagens/youtube.png" alt="Logo-YouTube">
+            </ul>
+          </div>
+          <div id="endereco">
+            <h2>venha até nós</h2>
+            <p>Rua JavaScript nº 124, Vila HTML - São Paulo - SP</p>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
   <footer>

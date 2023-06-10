@@ -13,8 +13,31 @@ Grandes telas: acima de 1200px
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+  #conteudo-sobreloja {
+    display: flex;
+    margin-top: 30px;
+  }
+
   #burguer {
     display: none;
+  }
+
+  #imagem {
+    background-color: red;
+    height: 350px;
+    width: 50%;
+    float: left;
+  }
+
+  #imagem > img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  #sobre-a-loja > h1 {
+    width: 100%;
   }
 
   /*header {
@@ -22,20 +45,32 @@ Grandes telas: acima de 1200px
     flex-wrap: wrap;
   }*/
 
-  header h1 {
-    width: 38%;
+  header > .limitador > h1 {
+    width: 60%;
+    text-align: left;
     text-align: left;
   }
 
   header .limitador {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   #items {
     display: block;
-    height: 100%;
-    width: 60%;
+    width: 45%;
+    box-sizing: border-box;
+  }
+
+  #items > #loja {
+    float: left;
+    width: 45%;
+    margin: 0px;
+  }
+
+  #items > #contatoloja {
+    width: 45%;
   }
 
   #items li {
@@ -58,40 +93,75 @@ Grandes telas: acima de 1200px
     margin-bottom: 10px;
   }
 
-  main img {
-    width: 50%;
-    float: left;
-  }
-
   #descricao {
     display: block;
     box-sizing: border-box;
     width: 50%;
     float: right;
-    padding-left: 10px;
+    height: 350px;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  #descricao > p {
     font-size: 1em;
   }
 
   #icones {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
-    float: right;
   }
 
-  #icones img {
-    margin-right: 10px;
+  #icones ul {
+    width: 100%;
+  }
+
+  #icones li {
+    float: left;
   }
 
   #nintendo-imagem {
     width: 80px;
+    float: left;
+  }
+
+  #xbox-imagem {
+    float: left;
   }
 
   #play-imagem {
     width: 35px;
+    float: left;
   }
 
   #contato {
     margin-top: 400px;
+    height: 550px;
+    background-color: yellow;
+  }
+
+  #formulario {
+    background-color: red;
+    width: 50%;
+    float: left;
+  }
+
+  #formulario > h2 {
+    text-align: left;
+  }
+
+  #redes-sociais {
+    width: 47%;
+    float: right;
+    background-color: green;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+  }
+
+  #endereco {
+    background-color: blue;
+    width: 100%;
   }
 }
