@@ -12,7 +12,7 @@ function Menu() {
     itens.style.display = 'none'
   } else {
     itens.style.display = 'block'
-  }
+  } 
 }
 
 const form = document.getElementById('fale-conosco')
@@ -25,10 +25,20 @@ function validaNome(NomeCompleto) {
 form.addEventListener('submit', function(e){
   e.preventDefault()
 
-  const NomeBeneficiario = document.getElementById('inomeCompleto')
-  if (!validaNome(NomeBeneficiario.value)) {
-    alert('O Nome está incompleto!')
+  const nomeBeneficiario = document.getElementById('inomeCompleto')
+  const numeroContaBeneficiario = document.getElementById('inumeroConta')
+  const valorDeposito = document.getElementById('ivalorDeposito')
+  const mensagemSucesso = `Montande de: <b>${valorDeposito.value}</b> depositado para o cliente <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>`
+
+  if (validaNome(nomeBeneficiario.value)) {
+    const containerMensagemSucesso = document.querySelector('.msg-sucesso')
+    containerMensagemSucesso.innerHTML = mensagemSucesso;
+    containerMensagemSucesso.style.display = 'block'
+
+    nomeBeneficiario.value = ''
+    numeroContaBeneficiario.value = ''
+    valorDeposito.value = ''
   } else {
-    alert('Tudo OK!')
+    alert('O Nome está incompleto!')
   }
 })

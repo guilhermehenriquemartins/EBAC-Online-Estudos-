@@ -255,3 +255,10 @@ footer {
   color: white;
   padding: 10px 0px;
 }
+
+.msg-sucesso {
+  background-color: green;
+  color: white;
+  padding: 15px;
+  display: none;
+}
