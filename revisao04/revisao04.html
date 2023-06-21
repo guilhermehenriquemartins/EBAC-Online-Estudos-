@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="shortcut icon" href="Paomedia-Small-N-Flat-Profile-group.512.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/first.css">
+</head>
+<body>
+  <section id="limitador">
+    <h1>playtec banking</h1> 
+    <h2>Depósitos</h2>
+    <form action="cadastro.php" method="post" id="form-deposito">
+      <input type="text" name="nomeBen" id="nomeBeneficiario" autocomplete="username" placeholder="Nome Completo do Beneficiário" required>
+      <input type="number" name="numeroC" id="numeroContaBeneficiario" placeholder="Número da Conta" required>
+      <input type="number" name="numeroV" id="numeroValorBeneficiario" placeholder="Valor" required>
+      <textarea name="desc" id="Descricao" cols="30" rows="10" placeholder="Descrição"></textarea>
+      <input type="submit" value="DEPOSITAR" onclick="validaNome()">
+    </form>
+    <p class="mensagem-sucesso">
+      Montante de: <b>1000</b> depositado para o cliente: <b>teste</b> - conta: <b>1</b>
+    </p>
+  </section>
+  <script src="programando.js"></script>
+</body>
+</html>
